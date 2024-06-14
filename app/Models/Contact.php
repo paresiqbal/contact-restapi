@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Contact extends Model
 {
+    protected $table = 'contacts';
     protected $primaryKey = 'id';
     protected $KeyType = "int";
-    protected $table = 'contacts';
     public $incrementing = true;
     public $timestamps = true;
 
