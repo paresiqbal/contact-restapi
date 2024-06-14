@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Contact extends Model
 {
-    use HasFactory;
+    protected $primaryKey = 'id';
+    protected $KeyType = "int";
+    protected $table = 'contacts';
+    public $incrementing = true;
+    public $timestamps = true;
 }
