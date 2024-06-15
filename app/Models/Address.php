@@ -13,7 +13,7 @@ class Address extends Model
     public $incrementing = true;
     public $timestamps = true;
 
-    // Relationship with Contact
+    // Relationship with Contact asdasds
     public function contact(): BelongsTo
     {
         return $this->belongsTo(Contact::class, "contact_id", "id");
